@@ -1,0 +1,64 @@
+{
+    "customers": [
+        {
+            "fullName": "John Doe",
+            "preferences": {
+            "coachReputation": 2.6
+            }
+        },
+        {
+            "fullName": "Dee End",
+            "preferences": {
+            "coachReputation": 3.7
+            }
+        },
+        {
+            "fullName": "Jen Tile",
+            "preferences": {
+            "coachReputation": 8.5
+            }
+        },
+        {
+            "fullName": "Simon Sais",
+            "preferences": {
+            "coachReputation": 9.7
+            }
+        },
+        {
+            "fullName": "Dulcie Veeta",
+            "preferences": {
+            "coachReputation": 2.6
+            }
+        },
+        {
+            "fullName": "Ben Dover",
+            "preferences": {
+            "coachReputation": 4.7
+            }
+        },
+        {
+            "fullName": "Lord Brain",
+            "preferences": {
+            "coachReputation": 5.6
+            }
+        },
+        {
+            "fullName": "Sweet Squat",
+            "preferences": {
+            "coachReputation": 3.7
+            }
+        },
+        {
+            "fullName": "Harley Queen",
+            "preferences": {
+            "coachReputation": 8.1
+            }
+        },
+        {
+            "fullName": "Talia al Ghul",
+            "preferences": {
+            "coachReputation": 2.5
+            }
+        }
+    ]
+}
