@@ -1,0 +1,5 @@
+.deckContainer {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 40px;
+}

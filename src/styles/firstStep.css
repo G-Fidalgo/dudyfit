@@ -1,0 +1,12 @@
+.containerFirstStep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 50px;
+  flex-direction: column;
+}
+
+.formFirstStepContainer {
+  width: 100%;
+}

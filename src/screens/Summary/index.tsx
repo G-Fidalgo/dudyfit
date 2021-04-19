@@ -1,5 +1,6 @@
 import { Tab, Tabs } from 'react-bootstrap';
 import FirstTabSummary from '../../components/FirstTabSummary';
+import '../../styles/summary.css';
 
 const SummaryScreen = () => {
   return (

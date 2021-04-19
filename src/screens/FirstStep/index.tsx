@@ -2,13 +2,18 @@ import { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import FirstStepForm from '../../components/FirstStepForm';
 import { useHistory } from 'react-router-dom';
+import CustomersModal from '../../components/CustomerModal';
+import '../../styles/firstStep.css';
 
 const FirstStepScreen = (props: any) => {
+  let history = useHistory();
+
   const onSubmit = (event: any) => {
     event.preventDefault();
     history.push('/b');
   };
-  let history = useHistory();
+  const [modalShow, setModalShow] = useState(false);
+
   const [arrayForms, setArrayForms] = useState([]);
 
   useEffect(() => {
@@ -20,13 +25,19 @@ const FirstStepScreen = (props: any) => {
   }, []);
 
   return (
-    <Form onSubmit={onSubmit}>
-      {arrayForms}
-      <Button variant="primary" type="submit">
-        Submit
+    <div className="containerFirstStep">
+      <Form onSubmit={onSubmit} className="formFirstStepContainer">
+        {arrayForms}
+        <Button variant="primary" type="submit">
+          Ver Reparto
+        </Button>
+      </Form>
+      <Button variant="primary" onClick={() => setModalShow(true)}>
+        Ver clientes
       </Button>
-      ,
-    </Form>
+
+      <CustomersModal show={modalShow} onHide={() => setModalShow(false)} />
+    </div>
   );
 };
 

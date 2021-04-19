@@ -3,9 +3,11 @@ import Context from '../utils/context';
 import { CardDeck } from 'react-bootstrap';
 import trainerAssingment from '../services/trainerAssingment.service';
 import TrainerCard from './TrainerCard';
+import '../styles/firstTabSummary.css';
+
 const FirstTabSummary = (props: any) => {
   const { context } = useContext<any>(Context);
- 
+
   const [cardList, setCardList] = useState([]);
 
   useEffect(() => {
@@ -13,7 +15,7 @@ const FirstTabSummary = (props: any) => {
     setCardList(list);
   }, []);
 
-  return <CardDeck>{cardList}</CardDeck>;
+  return <CardDeck className="deckContainer">{cardList}</CardDeck>;
 };
 
 export default FirstTabSummary;
