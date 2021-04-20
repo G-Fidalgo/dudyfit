@@ -27,7 +27,6 @@ const CustomerCard = (props: any) => {
   });
 
   useEffect(() => {
-    console.log(props.data);
     let data: any = props.data;
     setCardData(data);
   }, []);
