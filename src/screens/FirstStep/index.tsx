@@ -10,7 +10,7 @@ const FirstStepScreen = (props: any) => {
 
   const onSubmit = (event: any) => {
     event.preventDefault();
-    history.push('/b');
+    history.push('/summary');
   };
   const [modalShow, setModalShow] = useState(false);
 

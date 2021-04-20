@@ -1,9 +1,9 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import FirstStepScreen from './screens/FirstStep';
 import SummaryScreen from './screens/Summary';
 import Context from './utils/context';
 import { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   const [context, setContext] = useState<any>([]);
@@ -13,16 +13,16 @@ function App() {
   }, []);
   return (
     <Context.Provider value={value}>
-      <Router>
+      <BrowserRouter>
         <Switch>
-          <Route path="/a">
+          <Route path="/form">
             <FirstStepScreen />
           </Route>
-          <Route path="/b">
+          <Route path="/summary">
             <SummaryScreen />
           </Route>
         </Switch>
-      </Router>
+      </BrowserRouter>
     </Context.Provider>
   );
 }

@@ -16,7 +16,7 @@ const SummaryScreen = () => {
         </Tab>
       </Tabs>
       <Button variant="warning">
-        <Link to="/a">Volver</Link>
+        <Link to="/form">Volver</Link>
       </Button>
     </div>
   );
