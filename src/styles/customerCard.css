@@ -1,0 +1,9 @@
+.customerCardWrap {
+  width: 300px;
+  margin: 15px;
+}
+
+.customerTrainerWrap {
+  display: flex;
+  flex-direction: column;
+}

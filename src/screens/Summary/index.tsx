@@ -1,17 +1,24 @@
-import { Tab, Tabs } from 'react-bootstrap';
+import { Tab, Tabs, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import FirstTabSummary from '../../components/FirstTabSummary';
+import SecondTabSummary from '../../components/SecondTabSummary';
 import '../../styles/summary.css';
 
 const SummaryScreen = () => {
   return (
-    <Tabs defaultActiveKey="entrenadores" id="uncontrolled-tab-example">
-      <Tab eventKey="entrenadores" title="Entrenadores">
-        <FirstTabSummary></FirstTabSummary>
-      </Tab>
-      <Tab eventKey="valoracion" title="Valoración de conjunto">
-        bbb
-      </Tab>
-    </Tabs>
+    <div>
+      <Tabs defaultActiveKey="entrenadores" id="uncontrolled-tab-example">
+        <Tab eventKey="entrenadores" title="Entrenadores">
+          <FirstTabSummary></FirstTabSummary>
+        </Tab>
+        <Tab eventKey="satisfaction" title="Satisfacción">
+          <SecondTabSummary></SecondTabSummary>
+        </Tab>
+      </Tabs>
+      <Button variant="warning">
+        <Link to="/a">Volver</Link>
+      </Button>
+    </div>
   );
 };
 
